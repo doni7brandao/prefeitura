@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+
+
+
+
+
+<!-- CSS -->
+<link href="../bootstrap/css/bootstrap.css" rel="stylesheet">
+<style type="text/css">
+
+.padding-top-30 {
+	padding-top: 30px
+}
+
+.padding-15 {
+	padding: 15px;
+}
+
+.margin-direita {
+	margin-right: 15px;
+}
+
+.cor-fundo {
+	background-color: red;
+}
+
+.fundo {
+	padding: 50px;
+    background-image: url("5.jpg");
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+
+.btn-largura{
+width: 120px;
+	height: 55px;
+}
+
+
+.btn-orcamento {
+  color: #fff;
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+}
+
+.btn-receitas{
+  color: #fff;
+  background-color: #5bc0de;
+  border-color: #46b8da;
+}
+
+.btn-despesas{
+  color: #fff;
+  background-color: #ffd400;
+  border-color: #ffff4d;
+}
+
+.btn-servidores {
+  color: #fff;
+  background-color: #d9534f;
+  border-color: #d43f3a;
+}
+
+.btn-contratos-convenios {
+  color: #fff;
+  background-color: #f0ad4e;
+  border-color: #eea236;
+}
+
+.btn-licitacoes {
+  color: #fff;
+  background-color: #996699;
+  border-color: #8c6699;
+}
+
+.btn-lrf {
+  color: #fff;
+  background-color: #bfbfbf;
+  border-color: #999999;
+}
+
+/* css do rodapé fixo */
+html, body {
+	height: 100%;
+	/* The html and body elements cannot have any padding or margin. */
+}
+
+/* Wrapper for page content to push down footer */
+#wrap {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	/* Negative indent footer by it's height */
+	margin: 0 auto -60px;
+}
+
+/* Set the fixed height of the footer here */
+#push, #footer {
+	height: 60px;
+}
+
+#footer {
+	background-color: #ebebeb;
+}
+
+/* Lastly, apply responsive CSS fixes as necessary */
+@media ( max-width : 767px) {
+	#footer {
+		margin-left: -20px;
+		margin-right: -20px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}
+
+/* Custom page CSS
+      -------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+.container {
+	width: auto;
+	max-width: 680px;
+}
+
+.container .credit {
+	margin: 20px 0;
+}
+</style>
+<link href="../assets/css/bootstrap-responsive.css" rel="stylesheet">
+
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+
+<title>Prefeitura Municipal de Prefeitolandia</title>
+
+</head>
+
+<body>
+	<div id="wrap">
+
+		<!-- Script para o facebook -->
+		<div id="fb-root"></div>
+		<script>
+			(function(d, s, id) {
+				var js, fjs = d.getElementsByTagName(s)[0];
+				if (d.getElementById(id))
+					return;
+				js = d.createElement(s);
+				js.id = id;
+				js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.4";
+				fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));
+		</script>
+
+
+
+		<nav class="navbar navbar-default text-center">
+
+
+	<a href="index.html">
+						<button class="btn navbar-btn btn-default btn-largura">Início</button>
+				</a>
+
+				<a href="#orcamento"  data-toggle="tab">
+						<button class="btn navbar-btn btn-orcamento btn-largura ">Orçamento </button>
+				</a>
+
+				<a href="#receitas"  data-toggle="tab">
+						<button class="btn navbar-btn btn-receitas btn-largura">Receitas</button>
+				</a>
+
+				<a href="#despesas"  data-toggle="tab">
+						<button class="btn navbar-btn btn-despesas btn-largura">Despesas</button>
+				</a>
+
+				<a href="#servidores" data-toggle="tab">
+						<button class="btn navbar-btn btn-servidores btn-largura" >Servidores</button>
+				</a>
+				
+				<a href="#contratos-convenios"  data-toggle="tab">
+						<button class="btn navbar-btn btn-contratos-convenios btn-largura">Contratos<br>Convênios</button>
+				</a>			
+
+				<a href="#licitacoes"  data-toggle="tab">
+						<button class="btn navbar-btn btn-licitacoes btn-largura">Licitações </button>
+				</a>				
+				
+				<a href="#lrf"  data-toggle="tab">
+						<button 
+					
+						class="btn navbar-btn btn-lrf btn-largura">LRF</button>
+				</a> 		
+
+		</nav>
+
+
+
+		<div class="container-fluid">
+		
+					<!-- Logo prefeitura  -->
+			<div class="row padding-15">
+				<div class=" col-md-12 fundo "></div>
+			</div>
+		
+			<div class="row">
+				<div class="col-md-12">
+
+
+
+
+
+
+
+
+
+
+<div class="tab-content">
+    <div role="tabpanel" class="tab-pane " id="orcamento">Orçamento</div>
+    <div role="tabpanel" class="tab-pane active" id="receitas">
+<iframe src="http://e-gov.betha.com.br/transparencia/con_comparativoreceita.faces?mun=4NcotHvvKtuEZ7YmMnn6CD3KiHRAdYhS" width="100%" height="800px"     > </iframe>
+</div>
+    <div role="tabpanel" class="tab-pane" id="despesas">
+<iframe src="http://e-gov.betha.com.br/transparencia/con_execucaodespesa.faces?mun=4NcotHvvKtuEZ7YmMnn6CD3KiHRAdYhS" width="100%" height="800px"     > </iframe>
+</div>
+    <div role="tabpanel" class="tab-pane" id="servidores">Servidores</div>
+    
+    <div role="tabpanel" class="tab-pane" id="contratos-convenios">Contratos e Convênios</div>
+    <div role="tabpanel" class="tab-pane" id="licitacoes">Licitaçõess</div>
+    <div role="tabpanel" class="tab-pane" id="lrf">LRF</div>
+                
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+				</div>
+			</div>
+		</div>
+
+		<div id="push"></div>
+	</div>
+
+	<div id="footer">
+		<div class="container">
+			<p class="text-center">
+				Prefeitura Municipal de Prefeitolandia<br> Logradouro Completo, nº 100,
+				Centro, Prefeitolandia-UF, 57.660-000 <br> enderecodeemail@email.com.br
+				<br>
+			</p>
+		</div>
+	</div>
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="../bootstrap/js/bootstrap.min.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

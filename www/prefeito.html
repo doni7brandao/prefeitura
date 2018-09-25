@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+
+
+
+
+
+<!-- CSS -->
+<link href="../bootstrap/css/bootstrap.css" rel="stylesheet">
+<style type="text/css">
+.fundo {
+	padding: 60px;
+	background-image: url("5.jpg");
+	background-repeat: no-repeat;
+	background-position: right top;
+}
+
+.height-230 {
+	height: 230px;
+}
+
+.height-64 {
+	height: 64px;
+}
+
+.width-64 {
+	width: 64px;
+}
+
+.padding-top-30 {
+	padding-top: 30px
+}
+
+.carousel-caption {
+	top: 0;
+	font-size: 20px;
+}
+
+.padding-bottom-25 {
+	padding-bottom: 25px;
+}
+/* css do rodapé fixo */
+html, body {
+	height: 100%;
+	/* The html and body elements cannot have any padding or margin. */
+}
+
+/* Wrapper for page content to push down footer */
+#wrap {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	/* Negative indent footer by it's height */
+	margin: 0 auto -60px;
+}
+
+/* Set the fixed height of the footer here */
+#push, #footer {
+	height: 60px;
+}
+
+#footer {
+	background-color: #ebebeb;
+}
+
+/* Lastly, apply responsive CSS fixes as necessary */
+@media ( max-width : 767px) {
+	#footer {
+		margin-left: -20px;
+		margin-right: -20px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}
+
+/* Custom page CSS
+      -------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+.container {
+	width: auto;
+	max-width: 680px;
+}
+
+.container .credit {
+	margin: 20px 0;
+}
+</style>
+<link href="../assets/css/bootstrap-responsive.css" rel="stylesheet">
+
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+
+<title>Prefeitura Municipal de Prefeitolandia</title>
+
+</head>
+
+<body>
+	<div id="wrap">
+
+		<!-- Script para o facebook -->
+		<div id="fb-root"></div>
+		<script>
+			(function(d, s, id) {
+				var js, fjs = d.getElementsByTagName(s)[0];
+				if (d.getElementById(id))
+					return;
+				js = d.createElement(s);
+				js.id = id;
+				js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.4";
+				fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));
+		</script>
+
+
+
+		<!-- Barra de navegação -->
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<ul class="nav navbar-nav">
+					<li><a href="index.html">Início</a></li>
+					<li class="active"><a href="municipio.html">Prefeitolandia</a></li>
+					<li><a href="transparencia.html">Transparência</a></li>
+
+					<li class="dropdown"><a href="#" class="dropdown-toggle"
+						data-toggle="dropdown" role="button" aria-haspopup="true"
+						aria-expanded="false">Prefeitura <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="prefeitura.html">Prefeitura</a></li>
+							<li><a href="prefeito.html">Prefeito</a></li>
+							<li><a href="vice-prefeito.html">Vice-Prefeito</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="simbolos.html">Símbolos</a></li>
+							<li><a href="feriados.html">Feriados municipais</a></li>
+						</ul></li>
+				</ul>
+
+				<ul class="nav navbar-nav navbar-right">
+					<FORM class="navbar-form navbar-left" role="search" method=GET
+						action=http://www.google.com/search>
+						<input type=hidden name=sitesearch value=www.prefeitolandia.al.gov.br>
+
+						<div class="input-group">
+							<input type=text name=q size=20 class="form-control"
+								placeholder="Procurar"> <span class="input-group-btn">
+								<button class="btn btn-default">
+									<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+								</button>
+							</span>
+						</div>
+					</FORM>
+				</ul>
+			</div>
+		</nav>
+
+
+
+		<!-- Corpo da página  -->
+		<div class="container-fluid">
+
+
+			<!-- Logo prefeitura  -->
+			<div class="row padding-15">
+				<div class=" col-md-12 fundo "></div>
+			</div>
+
+
+			<div class="row"></div>
+
+
+		</div>
+
+
+		<!-- div usada para empurar o rodapé -->
+		<div id="push"></div>
+
+	</div>
+
+
+	<div id="footer">
+		<div class="container">
+			<p class="text-center">
+				Prefeitura Municipal de Prefeitolandia<br> Logradouro Completo, nº 100,
+				Centro, Prefeitolandia-UF, 57.660-000 <br> enderecodeemail@email.com.br
+				<br>
+			</p>
+		</div>
+	</div>
+
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="../bootstrap/js/bootstrap.min.js"></script>
+
+</body>
+</html>
